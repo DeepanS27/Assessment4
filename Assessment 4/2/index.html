@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="assessment" />
+    <title>Q2</title>
+    <style>
+      * {
+        text-align: center;
+        margin: 10px 0;
+      }
+      input[type="text"]:focus {
+        color: red;
+      }
+      .error {
+        display: flex;
+        flex-direction: column;
+      }
+      input:invalid {
+        background-color: rgb(254, 233, 233);
+        border: none;
+        outline: 2px solid red;
+        border-radius: 5px;
+      }
+      p {
+        font-size: smaller;
+        color: grey;
+      }
+    </style>
+  </head>
+  <body>
+    <h3>
+      Implement a CSS class named "error" that displays text in red and adds a
+      border around an input field when applied.
+    </h3>
+    <form class="error">
+      <div>
+        <label for="text">Enter Text:</label> <input name="Text" type="text" />
+      </div>
+      <div>
+        <label for="email">Email Address:</label>
+        <input name="email" type="email" value="abc@de@.com" />
+      </div>
+    </form>
+    <p>Hint: Enter correct email id format to remove the css properties</p>
+  </body>
+</html>

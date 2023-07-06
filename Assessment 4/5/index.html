@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="assessment" />
+    <title>Q5</title>
+    <style>
+      ol {
+        list-style: none;
+        counter-reset: custom;
+      }
+      ol li {
+        counter-increment: custom;
+        letter-spacing: 2px;
+      }
+      ol li::before {
+        content: "(" counter(custom) ")";
+        color: blueviolet;
+      }
+      body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <h3>
+      Create an HTML ordered list (ol) with five list items (li). Apply custom
+      numbering to the list using CSS.
+    </h3>
+    <ol>
+      <p>customized ordered list</p>
+      <li>Number one</li>
+      <li>Number two</li>
+      <li>Number three</li>
+      <li>Number four</li>
+      <li>Number five</li>
+    </ol>
+  </body>
+</html>
